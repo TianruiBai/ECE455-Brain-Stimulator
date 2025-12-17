@@ -1,0 +1,51 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//Tool Version: V1.9.9
+//Part Number: GW5A-LV25MG121NC1/I0
+//Device: GW5A-25
+//Device Version: A
+//Created Time: Mon 12 08 23:35:59 2025
+
+IO_LOC "led1" E8;
+IO_PORT "led1" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "led0" D7;
+IO_PORT "led0" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "adc_ss_n[1]" J7;
+IO_PORT "adc_ss_n[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "adc_ss_n[0]" L11;
+IO_PORT "adc_ss_n[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "adc_sclk[1]" L7;
+IO_PORT "adc_sclk[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "adc_sclk[0]" E11;
+IO_PORT "adc_sclk[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "dac_mosi[1]" L8;
+IO_PORT "dac_mosi[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "dac_mosi[0]" E10;
+IO_PORT "dac_mosi[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "dac_ss_n[1]" K10;
+IO_PORT "dac_ss_n[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "dac_ss_n[0]" A10;
+IO_PORT "dac_ss_n[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "dac_sclk[1]" L10;
+IO_PORT "dac_sclk[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "dac_sclk[0]" A11;
+IO_PORT "dac_sclk[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "rst_bt" L1;
+IO_PORT "rst_bt" PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "bt_rx" K2;
+IO_PORT "bt_rx" PULL_MODE=UP HYSTERESIS=OFF BANK_VCCIO=3.3;
+IO_LOC "adc_miso[1]" K7;
+IO_PORT "adc_miso[1]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_miso[0]" K11;
+IO_PORT "adc_miso[0]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "rst" C10;
+IO_PORT "rst" PULL_MODE=DOWN BANK_VCCIO=3.3;
+IO_LOC "clk" E2;
+IO_PORT "clk" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "bt_tx" J4;
+IO_PORT "bt_tx" PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "I2C_SDA" J10;
+IO_PORT "I2C_SDA" PULL_MODE=NONE DRIVE=8 OPEN_DRAIN=ON BANK_VCCIO=3.3;
+IO_LOC "I2C_SCL" J11;
+IO_PORT "I2C_SCL" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;

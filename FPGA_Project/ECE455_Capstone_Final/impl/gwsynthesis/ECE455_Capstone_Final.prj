@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5A-25A" package="MBGA121N" speed="1" partNumber="GW5A-LV25MG121NC1/I0"/>
+    <FileList>
+        <File path="/home/polar/ECE455_Capstone_Final/src/I2C.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/UART.v" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/UART_rx.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/UART_tx.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/UART_warpper.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/gowin_pll/gowin_pll.v" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/ip2363_status.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/nco_generator.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/peak_proc.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/pkt_parser.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/rx_assembler_32B.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/rx_fifo.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/sawtooth_gen.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/stim_ctrl_fsm.sv" type="verilog"/>
+        <File path="/home/polar/ECE455_Capstone_Final/src/top.sv" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="1"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="/home/polar/ECE455_Capstone_Final/impl/gwsynthesis/ECE455_Capstone_Final.vg"/>
+        <Option type="print_all_synthesis_warning" value="1"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

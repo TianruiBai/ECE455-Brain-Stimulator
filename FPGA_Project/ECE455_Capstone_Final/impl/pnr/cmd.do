@@ -1,0 +1,13 @@
+-d /home/polar/ECE455_Capstone_Final/impl/gwsynthesis/ECE455_Capstone_Final.vg
+-p GW5A-25A-MBGA121N-1
+-pn GW5A-LV25MG121NC1/I0
+-cst /home/polar/ECE455_Capstone_Final/src/ECE455_Capstone_Final.cst
+-cfg /home/polar/ECE455_Capstone_Final/impl/pnr/device.cfg
+-sdc /home/polar/ECE455_Capstone_Final/src/ECE455_Capstone_Final.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23

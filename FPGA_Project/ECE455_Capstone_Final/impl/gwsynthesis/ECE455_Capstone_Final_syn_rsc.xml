@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="11" Lut="5">
+ <SubModule name="u_rx" Register="26" Lut="24"/>
+ <SubModule name="u_asm" Register="73" Lut="36"/>
+ <SubModule name="pkt_parser" Register="49" Lut="1"/>
+ <SubModule name="execute_cmd" Lut="60" MULTALU27X18="1">
+  <SubModule name="gen_channels[0].u_channel" Register="148" Alu="46" Lut="190">
+   <SubModule name="u_afe" Register="33" Alu="33" Lut="1" MULTALU27X18="1">
+    <SubModule name="u_peak_calc" Register="34" Lut="65" MULTALU27X18="1"/>
+    <SubModule name="PID_inst" Register="131" Alu="90" Lut="41" MULTALU27X18="2"/>
+   </SubModule>
+   <SubModule name="u_nco" Register="32" Alu="64">
+    <SubModule name="u_nco" Register="34" Lut="2">
+     <SubModule name="u_cordic_dds" Register="827" Alu="729" Lut="88" MULT27X36="1"/>
+    </SubModule>
+   </SubModule>
+   <SubModule name="u_saw" Register="67" Alu="31" Lut="173"/>
+   <SubModule name="u_spi_dac" Register="29" Alu="4" Lut="50"/>
+   <SubModule name="u_spi_adc" Register="29" Alu="4" Lut="15"/>
+  </SubModule>
+  <SubModule name="gen_channels[1].u_channel" Register="148" Alu="46" Lut="178">
+   <SubModule name="u_afe" Register="33" Alu="33" Lut="1" MULTALU27X18="1">
+    <SubModule name="u_peak_calc" Register="34" Lut="64" MULTALU27X18="1"/>
+    <SubModule name="PID_inst" Register="131" Alu="90" Lut="41" MULTALU27X18="2"/>
+   </SubModule>
+   <SubModule name="u_nco" Register="32" Alu="64">
+    <SubModule name="u_nco" Register="34" Lut="2">
+     <SubModule name="u_cordic_dds" Register="827" Alu="729" Lut="85" MULT27X36="1"/>
+    </SubModule>
+   </SubModule>
+   <SubModule name="u_saw" Register="67" Alu="31" Lut="165"/>
+   <SubModule name="u_spi_dac" Register="29" Alu="4" Lut="50"/>
+   <SubModule name="u_spi_adc" Register="29" Alu="4" Lut="15"/>
+  </SubModule>
+  <SubModule name="gen_channels[2].u_channel" Register="146" Alu="46" Lut="177">
+   <SubModule name="u_afe" Register="33" Alu="33" Lut="1" MULTALU27X18="1">
+    <SubModule name="u_peak_calc" Register="34" Lut="62" MULTALU27X18="1"/>
+    <SubModule name="PID_inst" Register="131" Alu="90" Lut="41" MULTALU27X18="2"/>
+   </SubModule>
+   <SubModule name="u_nco" Register="32" Alu="64">
+    <SubModule name="u_nco" Register="34" Lut="2">
+     <SubModule name="u_cordic_dds" Register="827" Alu="729" Lut="86" MULT27X36="1"/>
+    </SubModule>
+   </SubModule>
+   <SubModule name="u_saw" Register="67" Alu="31" Lut="165"/>
+   <SubModule name="u_spi_dac" Register="29" Alu="4" Lut="50"/>
+   <SubModule name="u_spi_adc" Register="29" Alu="4" Lut="15"/>
+  </SubModule>
+  <SubModule name="gen_channels[3].u_channel" Register="146" Alu="46" Lut="178">
+   <SubModule name="u_afe" Register="33" Alu="33" Lut="1" MULTALU27X18="1">
+    <SubModule name="u_peak_calc" Register="34" Lut="63" MULTALU27X18="1"/>
+    <SubModule name="PID_inst" Register="131" Alu="90" Lut="41" MULTALU27X18="2"/>
+   </SubModule>
+   <SubModule name="u_nco" Register="32" Alu="64">
+    <SubModule name="u_nco" Register="34" Lut="2">
+     <SubModule name="u_cordic_dds" Register="827" Alu="729" Lut="87" MULT27X36="1"/>
+    </SubModule>
+   </SubModule>
+   <SubModule name="u_saw" Register="67" Alu="31" Lut="163"/>
+   <SubModule name="u_spi_dac" Register="29" Alu="4" Lut="50"/>
+   <SubModule name="u_spi_adc" Register="29" Alu="4" Lut="15"/>
+  </SubModule>
+ </SubModule>
+ <SubModule name="batt0" Register="11" Lut="26">
+  <SubModule name="i2c0" Register="39" Lut="90"/>
+ </SubModule>
+</Module>

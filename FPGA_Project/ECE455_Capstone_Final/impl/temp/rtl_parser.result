@@ -1,0 +1,484 @@
+[
+ {
+  "InstFile" : "/home/polar/ECE455_Capstone_Final/src/UART_warpper.sv",
+  "InstLine" : 1,
+  "InstName" : "UART_warpper",
+  "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/UART_warpper.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "UART_warpper",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/polar/ECE455_Capstone_Final/src/UART_warpper.sv",
+    "InstLine" : 25,
+    "InstName" : "iUART_Receive",
+    "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/UART.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "UART",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/polar/ECE455_Capstone_Final/src/UART.v",
+      "InstLine" : 14,
+      "InstName" : "iTX",
+      "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/UART_tx.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "UART_tx"
+     },
+     {
+      "InstFile" : "/home/polar/ECE455_Capstone_Final/src/UART.v",
+      "InstLine" : 21,
+      "InstName" : "iRX",
+      "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/UART_rx.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "UART_rx"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "/home/polar/ECE455_Capstone_Final/src/rx_fifo.sv",
+  "InstLine" : 1,
+  "InstName" : "rx_fifo",
+  "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/rx_fifo.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "rx_fifo"
+ },
+ {
+  "InstFile" : "/home/polar/ECE455_Capstone_Final/src/stim_ctrl_fsm.sv",
+  "InstLine" : 1,
+  "InstName" : "stim_ctrl_fsm",
+  "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/stim_ctrl_fsm.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "stim_ctrl_fsm"
+ },
+ {
+  "InstFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+  "InstLine" : 5,
+  "InstName" : "top",
+  "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+  "ModuleLine" : 5,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+    "InstLine" : 34,
+    "InstName" : "iPLL0",
+    "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+    "InstLine" : 67,
+    "InstName" : "u_rx",
+    "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/UART_rx.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "UART_rx"
+   },
+   {
+    "InstFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+    "InstLine" : 120,
+    "InstName" : "u_asm",
+    "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/rx_assembler_32B.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "rx_assembler_32B"
+   },
+   {
+    "InstFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+    "InstLine" : 142,
+    "InstName" : "pkt_parser",
+    "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/pkt_parser.sv",
+    "ModuleLine" : 3,
+    "ModuleName" : "pkt_parser"
+   },
+   {
+    "InstFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+    "InstLine" : 163,
+    "InstName" : "execute_cmd",
+    "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "cmd_exec",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv",
+      "InstLine" : 123,
+      "InstName" : "gen_channels[0].u_channel",
+      "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "channel_wrapper",
+      "SubInsts" : [
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 240,
+        "InstName" : "u_afe",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+        "ModuleLine" : 20,
+        "ModuleName" : "analog_front_end",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+          "InstLine" : 55,
+          "InstName" : "u_peak_calc",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/peak_proc.sv",
+          "ModuleLine" : 13,
+          "ModuleName" : "peak_proc"
+         },
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+          "InstLine" : 96,
+          "InstName" : "PID_inst",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv",
+          "ModuleLine" : 1,
+          "ModuleName" : "PID"
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 250,
+        "InstName" : "u_nco",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+        "ModuleLine" : 10,
+        "ModuleName" : "nco_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+          "InstLine" : 71,
+          "InstName" : "u_nco",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+          "ModuleLine" : 13,
+          "ModuleName" : "cordic_dds_top",
+          "SubInsts" : [
+           {
+            "InstFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+            "InstLine" : 102,
+            "InstName" : "u_cordic_dds",
+            "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv",
+            "ModuleLine" : 5,
+            "ModuleName" : "cordic_dds_stallable"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 264,
+        "InstName" : "u_saw",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/sawtooth_gen.sv",
+        "ModuleLine" : 8,
+        "ModuleName" : "tri_sawtooth_gen"
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 307,
+        "InstName" : "u_spi_dac",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "SPI_monrch"
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 324,
+        "InstName" : "u_spi_adc",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "SPI_monrch"
+       }
+      ]
+     },
+     {
+      "InstFile" : "/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv",
+      "InstLine" : 123,
+      "InstName" : "gen_channels[1].u_channel",
+      "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "channel_wrapper",
+      "SubInsts" : [
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 240,
+        "InstName" : "u_afe",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+        "ModuleLine" : 20,
+        "ModuleName" : "analog_front_end",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+          "InstLine" : 55,
+          "InstName" : "u_peak_calc",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/peak_proc.sv",
+          "ModuleLine" : 13,
+          "ModuleName" : "peak_proc"
+         },
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+          "InstLine" : 96,
+          "InstName" : "PID_inst",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv",
+          "ModuleLine" : 1,
+          "ModuleName" : "PID"
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 250,
+        "InstName" : "u_nco",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+        "ModuleLine" : 10,
+        "ModuleName" : "nco_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+          "InstLine" : 71,
+          "InstName" : "u_nco",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+          "ModuleLine" : 13,
+          "ModuleName" : "cordic_dds_top",
+          "SubInsts" : [
+           {
+            "InstFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+            "InstLine" : 102,
+            "InstName" : "u_cordic_dds",
+            "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv",
+            "ModuleLine" : 5,
+            "ModuleName" : "cordic_dds_stallable"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 264,
+        "InstName" : "u_saw",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/sawtooth_gen.sv",
+        "ModuleLine" : 8,
+        "ModuleName" : "tri_sawtooth_gen"
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 307,
+        "InstName" : "u_spi_dac",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "SPI_monrch"
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 324,
+        "InstName" : "u_spi_adc",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "SPI_monrch"
+       }
+      ]
+     },
+     {
+      "InstFile" : "/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv",
+      "InstLine" : 123,
+      "InstName" : "gen_channels[2].u_channel",
+      "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "channel_wrapper",
+      "SubInsts" : [
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 240,
+        "InstName" : "u_afe",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+        "ModuleLine" : 20,
+        "ModuleName" : "analog_front_end",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+          "InstLine" : 55,
+          "InstName" : "u_peak_calc",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/peak_proc.sv",
+          "ModuleLine" : 13,
+          "ModuleName" : "peak_proc"
+         },
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+          "InstLine" : 96,
+          "InstName" : "PID_inst",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv",
+          "ModuleLine" : 1,
+          "ModuleName" : "PID"
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 250,
+        "InstName" : "u_nco",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+        "ModuleLine" : 10,
+        "ModuleName" : "nco_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+          "InstLine" : 71,
+          "InstName" : "u_nco",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+          "ModuleLine" : 13,
+          "ModuleName" : "cordic_dds_top",
+          "SubInsts" : [
+           {
+            "InstFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+            "InstLine" : 102,
+            "InstName" : "u_cordic_dds",
+            "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv",
+            "ModuleLine" : 5,
+            "ModuleName" : "cordic_dds_stallable"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 264,
+        "InstName" : "u_saw",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/sawtooth_gen.sv",
+        "ModuleLine" : 8,
+        "ModuleName" : "tri_sawtooth_gen"
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 307,
+        "InstName" : "u_spi_dac",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "SPI_monrch"
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 324,
+        "InstName" : "u_spi_adc",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "SPI_monrch"
+       }
+      ]
+     },
+     {
+      "InstFile" : "/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv",
+      "InstLine" : 123,
+      "InstName" : "gen_channels[3].u_channel",
+      "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "channel_wrapper",
+      "SubInsts" : [
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 240,
+        "InstName" : "u_afe",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+        "ModuleLine" : 20,
+        "ModuleName" : "analog_front_end",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+          "InstLine" : 55,
+          "InstName" : "u_peak_calc",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/peak_proc.sv",
+          "ModuleLine" : 13,
+          "ModuleName" : "peak_proc"
+         },
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+          "InstLine" : 96,
+          "InstName" : "PID_inst",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv",
+          "ModuleLine" : 1,
+          "ModuleName" : "PID"
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 250,
+        "InstName" : "u_nco",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+        "ModuleLine" : 10,
+        "ModuleName" : "nco_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+          "InstLine" : 71,
+          "InstName" : "u_nco",
+          "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+          "ModuleLine" : 13,
+          "ModuleName" : "cordic_dds_top",
+          "SubInsts" : [
+           {
+            "InstFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+            "InstLine" : 102,
+            "InstName" : "u_cordic_dds",
+            "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv",
+            "ModuleLine" : 5,
+            "ModuleName" : "cordic_dds_stallable"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 264,
+        "InstName" : "u_saw",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/sawtooth_gen.sv",
+        "ModuleLine" : 8,
+        "ModuleName" : "tri_sawtooth_gen"
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 307,
+        "InstName" : "u_spi_dac",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "SPI_monrch"
+       },
+       {
+        "InstFile" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+        "InstLine" : 324,
+        "InstName" : "u_spi_adc",
+        "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+        "ModuleLine" : 1,
+        "ModuleName" : "SPI_monrch"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+    "InstLine" : 216,
+    "InstName" : "batt0",
+    "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/ip2363_status.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "ip2363_status",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/polar/ECE455_Capstone_Final/src/ip2363_status.sv",
+      "InstLine" : 50,
+      "InstName" : "i2c0",
+      "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/I2C.sv",
+      "ModuleLine" : 8,
+      "ModuleName" : "I2C"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+    "InstLine" : 265,
+    "InstName" : "u_tx",
+    "ModuleFile" : "/home/polar/ECE455_Capstone_Final/src/UART_tx.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "UART_tx"
+   }
+  ]
+ }
+]

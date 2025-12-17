@@ -1,0 +1,101 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/I2C.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/UART.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/UART_rx.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/UART_tx.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/UART_warpper.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/ip2363_status.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/nco_generator.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/peak_proc.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/pkt_parser.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/rx_assembler_32B.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/rx_fifo.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/sawtooth_gen.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/stim_ctrl_fsm.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/polar/ECE455_Capstone_Final/src/top.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/home/polar/ECE455_Capstone_Final/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

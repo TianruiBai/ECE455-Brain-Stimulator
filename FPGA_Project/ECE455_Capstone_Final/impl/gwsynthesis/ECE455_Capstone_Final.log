@@ -1,0 +1,100 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/I2C.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/UART.v'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/UART_rx.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/UART_tx.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/UART_warpper.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv'
+WARN  (EX3788) : Block identifier is required on this block("/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv":122)
+WARN  (EX3788) : Block identifier is required on this block("/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv":143)
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/gowin_pll/gowin_pll.v'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/ip2363_status.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/nco_generator.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/peak_proc.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/pkt_parser.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/rx_assembler_32B.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/rx_fifo.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/sawtooth_gen.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/stim_ctrl_fsm.sv'
+Analyzing Verilog file '/home/polar/ECE455_Capstone_Final/src/top.sv'
+Compiling module 'top'("/home/polar/ECE455_Capstone_Final/src/top.sv":5)
+Compiling module 'Gowin_PLL'("/home/polar/ECE455_Capstone_Final/src/gowin_pll/gowin_pll.v":10)
+Compiling module 'UART_rx'("/home/polar/ECE455_Capstone_Final/src/UART_rx.sv":1)
+Compiling module 'rx_assembler_32B'("/home/polar/ECE455_Capstone_Final/src/rx_assembler_32B.sv":2)
+Compiling module 'pkt_parser'("/home/polar/ECE455_Capstone_Final/src/pkt_parser.sv":3)
+Compiling module 'cmd_exec'("/home/polar/ECE455_Capstone_Final/src/execute_cmd.sv":1)
+Compiling module 'channel_wrapper'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":1)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":168)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":228)
+Compiling module 'analog_front_end'("/home/polar/ECE455_Capstone_Final/src/analog_front_end_proc.sv":20)
+Compiling module 'peak_proc'("/home/polar/ECE455_Capstone_Final/src/peak_proc.sv":13)
+WARN  (EX3791) : Expression size 25 truncated to fit in target size 24("/home/polar/ECE455_Capstone_Final/src/peak_proc.sv":115)
+Compiling module 'PID(P_COEFF=3,D_COEFF=58)'("/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv":1)
+WARN  (EX3791) : Expression size 25 truncated to fit in target size 24("/home/polar/ECE455_Capstone_Final/src/PID_cntrl.sv":87)
+Compiling module 'nco_generator'("/home/polar/ECE455_Capstone_Final/src/nco_generator.sv":10)
+Compiling module 'cordic_dds_top'("/home/polar/ECE455_Capstone_Final/src/cordic_dds_top.sv":13)
+Compiling module 'cordic_dds_stallable'("/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv":5)
+WARN  (EX3780) : Using initial value of 'atan_rom' since it is never assigned("/home/polar/ECE455_Capstone_Final/src/cordic_dds_stallable.sv":71)
+Compiling module 'tri_sawtooth_gen'("/home/polar/ECE455_Capstone_Final/src/sawtooth_gen.sv":8)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'on_cnt'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":270)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'off_cnt'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":271)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":293)
+Compiling module 'SPI_monrch'("/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv":1)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv":40)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("/home/polar/ECE455_Capstone_Final/src/SPI_monrch.sv":53)
+Compiling module 'channel_wrapper(CHANNEL_ID=1)'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":1)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":168)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":228)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'on_cnt'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":270)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'off_cnt'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":271)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":293)
+Compiling module 'channel_wrapper(CHANNEL_ID=2)'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":1)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":168)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":228)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'on_cnt'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":270)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'off_cnt'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":271)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":293)
+Compiling module 'channel_wrapper(CHANNEL_ID=3)'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":1)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":168)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":228)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'on_cnt'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":270)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'off_cnt'("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":271)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("/home/polar/ECE455_Capstone_Final/src/channel_wrapper.sv":293)
+WARN  (EX3670) : Actual bit length 2 differs from formal bit length 4 for port 'led0'("/home/polar/ECE455_Capstone_Final/src/top.sv":186)
+WARN  (EX3670) : Actual bit length 2 differs from formal bit length 4 for port 'led1'("/home/polar/ECE455_Capstone_Final/src/top.sv":187)
+Compiling module 'ip2363_status'("/home/polar/ECE455_Capstone_Final/src/ip2363_status.sv":1)
+Compiling module 'I2C(SLV_ADDR=7'b1110101)'("/home/polar/ECE455_Capstone_Final/src/I2C.sv":8)
+Compiling module 'UART_tx'("/home/polar/ECE455_Capstone_Final/src/UART_tx.sv":1)
+WARN  (EX1998) : Net 'sample_req' does not have a driver("/home/polar/ECE455_Capstone_Final/src/top.sv":211)
+WARN  (EX1998) : Net 'tx_valid' does not have a driver("/home/polar/ECE455_Capstone_Final/src/top.sv":259)
+WARN  (EX1998) : Net 'tx_byte[7]' does not have a driver("/home/polar/ECE455_Capstone_Final/src/top.sv":260)
+NOTE  (EX0101) : Current top module is "top"
+WARN  (NL0001) : Sweep user defined dangling instance "iPLL0/PLLA_inst"("/home/polar/ECE455_Capstone_Final/src/gowin_pll/gowin_pll.v":56)
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "Gowin_PLL" instantiated to "iPLL0" is swept in optimizing("/home/polar/ECE455_Capstone_Final/src/top.sv":38)
+WARN  (NL0002) : The module "UART_tx" instantiated to "u_tx" is swept in optimizing("/home/polar/ECE455_Capstone_Final/src/top.sv":272)
+[95%] Generate netlist file "/home/polar/ECE455_Capstone_Final/impl/gwsynthesis/ECE455_Capstone_Final.vg" completed
+[100%] Generate report file "/home/polar/ECE455_Capstone_Final/impl/gwsynthesis/ECE455_Capstone_Final_syn.rpt.html" completed
+GowinSynthesis finish

@@ -1,0 +1,26 @@
+Reading netlist file: "/home/polar/ECE455_Capstone_Final/impl/gwsynthesis/ECE455_Capstone_Final.vg"
+Parsing netlist file "/home/polar/ECE455_Capstone_Final/impl/gwsynthesis/ECE455_Capstone_Final.vg" completed
+Processing netlist completed
+Reading constraint file: "/home/polar/ECE455_Capstone_Final/src/ECE455_Capstone_Final.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Generate file "/home/polar/ECE455_Capstone_Final/impl/pnr/ECE455_Capstone_Final.pin.html" completed
+Generate file "/home/polar/ECE455_Capstone_Final/impl/pnr/ECE455_Capstone_Final.rpt.html" completed
+Generate file "/home/polar/ECE455_Capstone_Final/impl/pnr/ECE455_Capstone_Final.rpt.txt" completed
+Generate file "/home/polar/ECE455_Capstone_Final/impl/pnr/ECE455_Capstone_Final.tr.html" completed
+Tue Dec  9 12:11:34 2025
+

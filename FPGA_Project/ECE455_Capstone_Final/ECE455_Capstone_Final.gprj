@@ -1,0 +1,34 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5A-25A" pn="GW5A-LV25MG121NC1/I0">gw5a25a-002</Device>
+    <FileList>
+        <File path="src/I2C.sv" type="file.verilog" enable="1"/>
+        <File path="src/PID_cntrl.sv" type="file.verilog" enable="1"/>
+        <File path="src/SPI_monrch.sv" type="file.verilog" enable="1"/>
+        <File path="src/UART.v" type="file.verilog" enable="1"/>
+        <File path="src/UART_rx.sv" type="file.verilog" enable="1"/>
+        <File path="src/UART_tx.sv" type="file.verilog" enable="1"/>
+        <File path="src/UART_warpper.sv" type="file.verilog" enable="1"/>
+        <File path="src/analog_front_end_proc.sv" type="file.verilog" enable="1"/>
+        <File path="src/channel_wrapper.sv" type="file.verilog" enable="1"/>
+        <File path="src/cordic_dds_stallable.sv" type="file.verilog" enable="1"/>
+        <File path="src/cordic_dds_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/execute_cmd.sv" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/ip2363_status.sv" type="file.verilog" enable="1"/>
+        <File path="src/nco_generator.sv" type="file.verilog" enable="1"/>
+        <File path="src/peak_proc.sv" type="file.verilog" enable="1"/>
+        <File path="src/pkt_parser.sv" type="file.verilog" enable="1"/>
+        <File path="src/rx_assembler_32B.sv" type="file.verilog" enable="1"/>
+        <File path="src/rx_fifo.sv" type="file.verilog" enable="1"/>
+        <File path="src/sawtooth_gen.sv" type="file.verilog" enable="1"/>
+        <File path="src/stim_ctrl_fsm.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.sv" type="file.verilog" enable="1"/>
+        <File path="src/ECE455_Capstone_Final.cst" type="file.cst" enable="1"/>
+        <File path="src/ECE455_Capstone_Final.sdc" type="file.sdc" enable="1"/>
+        <File path="src/ECE455_Capstone_Final.rao" type="file.gao" enable="0"/>
+    </FileList>
+</Project>
